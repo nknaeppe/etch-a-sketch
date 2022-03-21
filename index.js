@@ -4,12 +4,7 @@ const sketchtGridContainer = document.querySelector(".sketch-grid");
 function getInputColor() {
     console.log(this.value);
 }
-function calcGridBoxHeight() {
-    return sketchtGridContainer.scrollHeight / 16;
-}
-function calcGridBoxWidth() {
-    return sketchtGridContainer.scrollWidth / 16;
-}
+
 function fillGrid() {
     for (let i = 0; i < 256; i++){
         console.log(i);
@@ -22,15 +17,6 @@ function fillGrid() {
     }
 }
 
-// function updateGridBoxSize() {
-
-//     const gridBoxes = document.querySelectorAll(".grid");
-//     const suffix = "px";
-//     gridBoxes.forEach((gridBox) => {
-//         gridBox.style.width = calcGridBoxHeight() + suffix;
-//         gridBox.style.height = calcGridBoxWidth() + suffix;
-//     })
-// }
 
 fillGrid();
 updateGridBoxSize();
