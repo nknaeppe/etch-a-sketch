@@ -19,9 +19,15 @@
         <h1>Etch a Sketch Tool</h1>
         <div class="control-tool">
             <div class="control-container">
+                <label for="xPixel">Pixel Width</label>
+                <input type="text" value="16" name="xPixel" id="xPixel">
+                <label for="yPixel">Pixel Height</label>
+                <input type="text" value="16" name="yPixel" id="yPixel">
                 <label for="color">Color: </label>
-                <input type="color" name="color" id="color">
-            </div>
+                <input type="color" name="color" id="color"> 
+                <input type="button" name="newGrid" value="New Grid" id="newGrid">
+                <input type="button" value="Clear" name="clear" id="clear">
+          </div>
             <div class="sketch-grid">
             </div>
         </div>
